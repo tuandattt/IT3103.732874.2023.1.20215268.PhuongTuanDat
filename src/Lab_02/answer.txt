@@ -1,0 +1,3 @@
+Trong Java, khi đã tạo constructor method để xây dựng DVD theo tiêu
+đề ta vẫn có thể tạo thêm constructor method khác để xây dựng DVD theo
+thể loại. 
