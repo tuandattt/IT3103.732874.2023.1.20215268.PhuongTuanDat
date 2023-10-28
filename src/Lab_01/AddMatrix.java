@@ -1,6 +1,7 @@
 package Lab_01;
 import java.util.Scanner;
 public class AddMatrix {
+    //hàm in matrix
     public static void print(int [][]matrix){
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
@@ -10,6 +11,7 @@ public class AddMatrix {
             System.out.println();
         }
     }
+    //khởi tạo 3 ma trận
     public static void main(String[] args){
         int [][]matrix1 = new int[3][3];
         int [][]matrix2 = new int[3][3];
@@ -21,6 +23,7 @@ public class AddMatrix {
                 matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
             }
         }
+        //In ra tổng 3 ma trận
         System.out.println("Matrix 1: ");
         print(matrix1);
 

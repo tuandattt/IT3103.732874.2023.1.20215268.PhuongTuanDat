@@ -9,14 +9,14 @@ public class CountDay {
         int month = 0;
 
         while (true) {
-            System.out.print("Enter a year: ");
+            System.out.print("Enter a year: "); //nhap nam
             if (scanner.hasNextInt()) {
                 year = scanner.nextInt();
                 if (year >= 0) {
                     break;
                 }
             }
-            System.out.println("Invalid year input. Please try again.");
+            System.out.println("Invalid year input. Please try again."); //kiem tra dieu kien
             scanner.nextLine();
         }
 
@@ -24,8 +24,9 @@ public class CountDay {
 
         while (true) {
             System.out.print("Enter a month: ");
-            monthInput = scanner.nextLine().trim().toLowerCase();
+            monthInput = scanner.nextLine().trim().toLowerCase(); //nhap thang
 
+            //Cac truong hop:
             switch (monthInput) {
                 case "january":
                 case "jan.":
@@ -105,8 +106,8 @@ public class CountDay {
             break;
         }
 
-        boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-
+        boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0); //kiem tra nam nhuan
+        //In ngay
         int daysInMonth;
         switch (month) {
             case 4:
@@ -116,12 +117,12 @@ public class CountDay {
                 daysInMonth = 30;
                 break;
             case 2:
-                daysInMonth = isLeapYear ? 29 : 28;
+                daysInMonth = isLeapYear ? 29 : 28; //kiem tra thang 2
                 break;
             default:
                 daysInMonth = 31;
         }
 
-        System.out.println("There are " + daysInMonth + " days in " + monthInput + " " + year + ".");
+        System.out.println("There are " + daysInMonth + " days in " + monthInput + " " + year + "."); //In ket qua
     }
 }
