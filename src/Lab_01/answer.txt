@@ -1,0 +1,16 @@
+1. Khi người dùng chọn Cancel thì sẽ xuất hiện Dialog thông báo "You've choosen : No".
+Bởi JOptionPane.YES_OPTION luôn trả về giá trị 0, trong khi ấn vào No hay Cancel thì giá trị option sẽ là 1 hoặc 2 
+nên option không bằng JOptionPane.YES_OPTION do đó hiện thị thông báo "You've choosen : No".
+
+2. Code bài 8.1 sẽ chạy xuất hiện Dialog với 3 options : YES, NO, CANCEL. 
+Cách tùy chỉnh options với người dùng , ví dụ chỉ hiển thị 2 options: YES, NO hay I do, I don't có thể sử dụng đoạn code sau :
+ 
+    String[] options = new String[] {"Yes", "No"};
+    int response = JOptionPane.showOptionDialog(null, "Message", "Title",
+        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+        null, options, options[0]);
+
+Ở đoạn code trên Dialog sẽ xuất hiện 2 options là YES và NO. Nếu muốn thêm nhiều options, sẽ thêm
+các options ở mảng options. Ví dụ :
+     String[] options = new String[] {"Yes", "No", "Maybe", "Never"};
+Khi đó Dialog sẽ xuất hiện 4 options : Yes, No, Maybe và Never
