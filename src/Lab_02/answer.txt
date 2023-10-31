@@ -1,3 +1,2 @@
-Trong Java, khi đã tạo constructor method để xây dựng DVD theo tiêu
-đề ta vẫn có thể tạo thêm constructor method khác để xây dựng DVD theo
-thể loại. 
+Trong Java, không thể tạo 2 constructor như vậy vì chúng bị trùng chữ kí 
+(chữ kí là đều là DVD(String))
