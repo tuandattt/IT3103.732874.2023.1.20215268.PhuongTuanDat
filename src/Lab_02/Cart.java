@@ -19,6 +19,17 @@ public class Cart {
         }
     }
 
+    public void addDigitalVideoDisc(DigitalVideoDisc [] dvdList){
+        for(DigitalVideoDisc disc: dvdList){
+            addDigitalVideoDisc(disc);
+        }
+    }
+
+    public void addDigitalVideoDisc(DigitalVideoDisc disc1, DigitalVideoDisc disc2){
+        addDigitalVideoDisc(disc1);
+        addDigitalVideoDisc(disc2);
+    }
+
     public void removeDigitalVideoDisc(DigitalVideoDisc disc){
         boolean found = false;
         for(int i = 0; i < qtyOrdered; i++){
