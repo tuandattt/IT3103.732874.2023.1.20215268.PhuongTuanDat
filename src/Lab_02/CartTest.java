@@ -17,5 +17,11 @@ public class CartTest {
 
         //test print method
         cart.print();
+        //test search by id method
+        System.out.println("Search by id:");
+        cart.search(1);
+        //test search by title method
+        System.out.println("Search by title:");
+        cart.search("Aladin");
     }
 }

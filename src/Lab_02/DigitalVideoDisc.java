@@ -87,5 +87,16 @@ public class DigitalVideoDisc {
         this.id = nbDigitalVideoDiscs;
     }
 
+    public String toString(){
+        return "DVD " + "- " + this.title + " - " + this.category + " - " + this.director + " - " + this.length +  ": " + this.cost + " $";
+    }
+
+    public boolean isMatch(String title){
+        if(title.equals(this.title)) return true;
+        else {
+            return false;
+        }
+    }
+    }
 
 }
