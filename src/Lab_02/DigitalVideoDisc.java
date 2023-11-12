@@ -78,4 +78,6 @@ public class DigitalVideoDisc {
         this.length = length;
         this.cost = cost;
     }
+
+
 }

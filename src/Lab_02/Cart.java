@@ -62,10 +62,13 @@ public class Cart {
             System.out.println("DVD " + "- " + itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() +
                     " - " + itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() +
                     ": " + itemsOrdered[i].getCost() + " $");
-            System.out.println("Total Cost: " + totalCost());
+
         }
+        System.out.println("Total Cost: " + totalCost());
         System.out.println("***************************************************");
     }
+
+
 
     public float totalCost(){
         float sum = 0;
