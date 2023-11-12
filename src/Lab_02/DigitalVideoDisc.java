@@ -55,7 +55,9 @@ public class DigitalVideoDisc {
     }
 
     public DigitalVideoDisc(String title) {
+        nbDigitalVideoDiscs++;
         this.title = title;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, float cost) {
