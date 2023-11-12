@@ -94,7 +94,6 @@ public class Cart {
         }
     }
 
-
     public float totalCost(){
         float sum = 0;
         for(int i = 0; i < qtyOrdered; i++){
@@ -105,5 +104,3 @@ public class Cart {
 
 
 }
-
-
