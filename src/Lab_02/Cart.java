@@ -55,6 +55,18 @@ public class Cart {
         }
     }
 
+    //Phuong thuc print
+    public void print(){
+        System.out.println("***********************CART***********************");
+        for(int i = 0; i < qtyOrdered; i++){
+            System.out.println("DVD " + "- " + itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() +
+                    " - " + itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() +
+                    ": " + itemsOrdered[i].getCost() + " $");
+            System.out.println("Total Cost: " + totalCost());
+        }
+        System.out.println("***************************************************");
+    }
+
     public float totalCost(){
         float sum = 0;
         for(int i = 0; i < qtyOrdered; i++){
@@ -62,6 +74,7 @@ public class Cart {
         }
         return sum;
     }
+
 
 }
 
