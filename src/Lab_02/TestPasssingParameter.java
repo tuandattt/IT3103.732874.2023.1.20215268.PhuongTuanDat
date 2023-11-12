@@ -11,7 +11,7 @@ public class TestPasssingParameter {
         System.out.println("cinderella dvd title: " + cinderellaDVD.getTitle());
 
         //test phuong thuc swap moi
-        swapObject(jungleDVD, cinderellaDVD);
+        swap(jungleDVD, cinderellaDVD);
         System.out.println("Sau khi swap: ");
         System.out.println("ungle DVD title: " + jungleDVD.getTitle());
         System.out.println("cinderella DVD title: " + cinderellaDVD.getTitle());
@@ -34,7 +34,7 @@ public class TestPasssingParameter {
     }
 
     // viet lai phuong thuc swap
-    public static void swapObject(DigitalVideoDisc o1, DigitalVideoDisc o2){
+    public static void swap(DigitalVideoDisc o1, DigitalVideoDisc o2){
         String title = o2.getTitle();
         o2.setTitle(o1.getTitle());
         o1.setTitle(title);
