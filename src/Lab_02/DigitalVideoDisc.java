@@ -7,6 +7,13 @@ public class DigitalVideoDisc {
     private int length;
     private float cost;
 
+    private static int nbDigitalVideoDiscs = 0; //Class member
+    private int id; // Object member
+
+    public DigitalVideoDisc(){
+        nbDigitalVideoDiscs++; //Cap nhat class member
+        this.id = nbDigitalVideoDiscs; //Gan gia tri cho Object member
+    }
     public String getTitle() {
         return title;
     }
