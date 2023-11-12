@@ -10,10 +10,10 @@ public class DigitalVideoDisc {
     private static int nbDigitalVideoDiscs = 0; //Class member
     private int id; // Object member
 
-    public DigitalVideoDisc(){
-        nbDigitalVideoDiscs++; //Cap nhat class member
-        this.id = nbDigitalVideoDiscs; //Gan gia tri cho Object member
+    public int getId() {
+        return id;
     }
+
     public String getTitle() {
         return title;
     }
@@ -55,27 +55,47 @@ public class DigitalVideoDisc {
     }
 
     public DigitalVideoDisc(String title) {
+        nbDigitalVideoDiscs++;
         this.title = title;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, float cost) {
+        nbDigitalVideoDiscs++;
         this.title = title;
         this.category = category;
         this.cost = cost;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, String director, float cost) {
+        nbDigitalVideoDiscs++;
         this.title = title;
         this.category = category;
         this.director = director;
         this.cost = cost;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+        nbDigitalVideoDiscs++;
         this.title = title;
         this.category = category;
         this.director = director;
         this.length = length;
         this.cost = cost;
+        this.id = nbDigitalVideoDiscs;
     }
+
+    public String toString(){
+        return "DVD " + "- " + this.title + " - " + this.category + " - " + this.director + " - " + this.length +  ": " + this.cost + " $";
+    }
+
+    public boolean isMatch(String title){
+        if(title.equals(this.title)) return true;
+        else {
+            return false;
+        }
+    }
+
 }

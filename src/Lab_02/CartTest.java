@@ -17,5 +17,7 @@ public class CartTest {
 
         //test print method
         cart.print();
+        //test search method
+        cart.search(0);
     }
 }
