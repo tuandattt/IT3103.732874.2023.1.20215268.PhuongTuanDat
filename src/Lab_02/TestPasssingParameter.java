@@ -10,6 +10,7 @@ public class TestPasssingParameter {
         System.out.println("jungle dvd title: " + jungleDVD.getTitle());
         System.out.println("cinderella dvd title: " + cinderellaDVD.getTitle());
 
+        
         //test phuong thuc swap moi
         swap(jungleDVD, cinderellaDVD);
         System.out.println("Sau khi swap: ");
