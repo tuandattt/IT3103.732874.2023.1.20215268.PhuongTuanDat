@@ -71,7 +71,7 @@ public class Cart {
     public void search(int id){
         boolean found = false;
         for(int i = 0; i < qtyOrdered; i++){
-            if(itemsOrdered[i].isMatch(id)) {
+            if(itemsOrdered[i].getId() == id) {
                 System.out.println(itemsOrdered[i]);
                 found = true;
             }
