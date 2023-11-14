@@ -1,4 +1,6 @@
-package Lab_02;
+package Lab_02.hust.soict.aims.cart;
+
+import Lab_02.hust.soict.aims.disc.DigitalVideoDisc;
 
 public class Cart {
     //Số lượng đĩa nhiều nhất có thể mua

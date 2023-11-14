@@ -1,4 +1,7 @@
-package Lab_02;
+package Lab_02.hust.soict.test.store;
+
+import Lab_02.hust.soict.aims.disc.DigitalVideoDisc;
+import Lab_02.hust.soict.aims.store.Store;
 
 public class StoreTest {
     public static void main(String[] args){
