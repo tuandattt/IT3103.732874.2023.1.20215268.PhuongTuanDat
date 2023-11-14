@@ -1,4 +1,4 @@
-package Lab_02;
+package Lab_02.hust.soict.aims.disc;
 
 public class DigitalVideoDisc {
     private String title;

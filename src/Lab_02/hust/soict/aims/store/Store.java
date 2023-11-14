@@ -1,4 +1,6 @@
-package Lab_02;
+package Lab_02.hust.soict.aims.store;
+
+import Lab_02.hust.soict.aims.disc.DigitalVideoDisc;
 
 public class Store {
     //Danh sach dia trong cua hang
