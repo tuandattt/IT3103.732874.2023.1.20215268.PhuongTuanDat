@@ -1,0 +1,2 @@
+Trong Java, không thể tạo 2 constructor như vậy vì chúng bị trùng chữ kí 
+(chữ kí là đều là DVD(String))
