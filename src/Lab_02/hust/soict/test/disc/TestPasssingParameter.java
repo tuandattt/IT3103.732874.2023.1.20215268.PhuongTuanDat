@@ -1,12 +1,12 @@
 package Lab_02.hust.soict.test.disc;
 
-import Lab_02.hust.soict.aims.disc.DigitalVideoDisc;
+import Lab_02.hust.soict.aims.media.DigitalVideoDisc;
 
 public class TestPasssingParameter {
     public static void main(String[] args){
         //TODO Auto-generated methor stub
-        DigitalVideoDisc jungleDVD = new DigitalVideoDisc("Jungle");
-        DigitalVideoDisc cinderellaDVD = new DigitalVideoDisc("Cinderella");
+        DigitalVideoDisc jungleDVD = new DigitalVideoDisc("Jungle", "Animation", "James", 15, 100);
+        DigitalVideoDisc cinderellaDVD = new DigitalVideoDisc("Cinderella", "Animation", "James", 15, 100);
 
         swap(jungleDVD, cinderellaDVD);
         System.out.println("jungle dvd title: " + jungleDVD.getTitle());

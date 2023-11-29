@@ -1,69 +1,61 @@
 package Lab_02.hust.soict.aims.cart;
 
-import Lab_02.hust.soict.aims.disc.DigitalVideoDisc;
+import Lab_02.hust.soict.aims.media.DigitalVideoDisc;
+import Lab_02.hust.soict.aims.media.Media;
+import Lab_02.hust.soict.aims.media.Track;
+
+import java.util.ArrayList;
 
 public class Cart {
     //Số lượng đĩa nhiều nhất có thể mua
     public static final int MAX_NUMBERS_ORDERED = 20;
     //tạo biến lưu thông tin đĩa cho vào giỏ hàng
-    private DigitalVideoDisc itemsOrdered[] =
-            new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
-    int qtyOrdered; //số lượng đĩa đã có trong giỏ hàng
+    private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
 
-    //Chọn đĩa vào giỏ hàng
-    public void addDigitalVideoDisc(DigitalVideoDisc disc){
-        if(qtyOrdered >= MAX_NUMBERS_ORDERED){ //kiểm tra số lượng đĩa đã có trong giỏ
-            System.out.println("Your cart is full");
-        } else {
-            itemsOrdered[qtyOrdered] = disc; //thêm đĩa vào giỏ hàng
-            qtyOrdered++; //tăng số lượng đĩa đã có
-            System.out.println("Added " + disc.getTitle() + " to the cart");
-        }
+    public ArrayList<Media> getItemsOrdered() {
+        return itemsOrdered;
     }
 
-    //overload phuong thuc addDigitalVideoDisc khac kieu tham so
-    public void addDigitalVideoDisc(DigitalVideoDisc [] dvdList){
-        for(DigitalVideoDisc disc: dvdList){
-            addDigitalVideoDisc(disc);
-        }
-    }
-
-    //overload phuong thuc addDigitalVideoDisc voi nhieu tham so
-    public void addDigitalVideoDisc(DigitalVideoDisc disc1, DigitalVideoDisc disc2){
-        addDigitalVideoDisc(disc1);
-        addDigitalVideoDisc(disc2);
-    }
-
-    public void removeDigitalVideoDisc(DigitalVideoDisc disc){
+    //Thêm hàng vào giỏ
+    public void addMedia(Media mediaName){
         boolean found = false;
-        for(int i = 0; i < qtyOrdered; i++){
-            if(itemsOrdered[i] == disc){
-                //lùi dvd tìm thấy xuống cuối danh sách
-                for(int j = i; j < qtyOrdered - 1; j++){
-                    itemsOrdered[j] = itemsOrdered[j+1];
-                }
-                //xóa dvd tìm được
-                itemsOrdered[qtyOrdered - 1] = null;
-                //cập nhật số lượng dvd
-                qtyOrdered--;
-                //cập nhật đã tìm thấy dvd muốn xóa
+        for(Media item: itemsOrdered){
+            if(item == mediaName){ //kiem tra ton tai
                 found = true;
-                System.out.println("Removed " + disc.getTitle() + " from your cart");
-                break;
+            }
+        }
+        if(found){
+            System.out.println("Item has already existed"); //In thong bao
+        }
+        else{
+            itemsOrdered.add(mediaName); //Thêm item vào list
+            System.out.println("Added new item");
+        }
+    }
+
+    //Xoá hàng trong giỏ
+    public void removeMedia(Media mediaName){
+        boolean found = false;
+        for(Media item: itemsOrdered){
+            if(item == mediaName){ //kiem tra ton tai
+                found = true;
             }
         }
         if(!found){
-            System.out.println("Cannot find " + disc.getTitle());
+            System.out.println("Item does not exist"); //In thong bao
+        }
+        else{
+            itemsOrdered.remove(mediaName); //Xoa item trong list
+            System.out.println("Removed new author");
         }
     }
 
     //Phuong thuc print
     public void print(){
         System.out.println("***********************CART***********************");
-        for(int i = 0; i < qtyOrdered; i++){
-            System.out.println("DVD " + "- " + itemsOrdered[i].getTitle() + " - " + itemsOrdered[i].getCategory() +
-                    " - " + itemsOrdered[i].getDirector() + " - " + itemsOrdered[i].getLength() +
-                    ": " + itemsOrdered[i].getCost() + " $");
+        for(Media item: itemsOrdered){
+            System.out.println("DVD " + "- " + item.getId() + " " + item.getTitle() + " - " + item.getCategory() +
+                    ": " + item.getCost() + " $");
 
         }
         System.out.println("Total Cost: " + totalCost());
@@ -72,9 +64,9 @@ public class Cart {
 
     public void search(int id){
         boolean found = false;
-        for(int i = 0; i < qtyOrdered; i++){
-            if(itemsOrdered[i].getId() == id) {
-                System.out.println(itemsOrdered[i]);
+        for(Media item: itemsOrdered){
+            if(item.getId() == id) {
+                System.out.println(item);
                 found = true;
             }
         }
@@ -85,9 +77,9 @@ public class Cart {
 
     public void search(String title){
         boolean found = false;
-        for(int i = 0; i < qtyOrdered; i++){
-            if(itemsOrdered[i].isMatch(title)){
-                System.out.println(itemsOrdered[i]);
+        for(Media item: itemsOrdered){
+            if(item.isMatch(title)){
+                System.out.println(item);
                 found = true;
             }
         }
@@ -96,10 +88,19 @@ public class Cart {
         }
     }
 
+    public Media findMedia(String title){
+        for(Media item: itemsOrdered){
+            if(item.isMatch(title)){
+                return item;
+            }
+        }
+        return null;
+    }
+
     public float totalCost(){
         float sum = 0;
-        for(int i = 0; i < qtyOrdered; i++){
-            sum = sum + itemsOrdered[i].getCost();
+        for(Media item: itemsOrdered){
+            sum = sum + item.getCost();
         }
         return sum;
     }
