@@ -318,6 +318,7 @@ public class Aims {
         System.out.println("2. Sort medias in cart");
         System.out.println("3. Remove media from cart");
         System.out.println("4. Play a media");
+        System.out.println("5. Place order");
         System.out.println("0. Back");
         System.out.println("--------------------------------");
         System.out.println("Please choose a number: 0-1-2-3-4-5");
@@ -339,6 +340,9 @@ public class Aims {
                 case 4:
                     playMediaFromCart();
                     break;
+                case 5:
+                    removeAllCart();
+                    break;
                 case 0:
                     System.out.println("Return to Store Menu");
                     break;
@@ -347,6 +351,11 @@ public class Aims {
             }
 
         } while (choice != 0);
+    }
+
+    public static void removeAllCart(){
+        System.out.println("An order is created");
+        cart.removeAll();
     }
 
     public static void filterMedia(){

@@ -105,5 +105,10 @@ public class Cart {
         return sum;
     }
 
+    public void removeAll(){
+        for (Media media: itemsOrdered){
+            itemsOrdered.remove(media);
+        }
+    }
 
 }
