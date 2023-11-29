@@ -5,69 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff583f53-a42c-49a5-898f-c58fd67b3afc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../production/src/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/.idea/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/20215268-Phuong_Tuan_Dat-BC_TH_Lab1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/20215268-Phuong_Tuan_Dat-Code_TH_Lab1.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/AddMatrix.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/Array.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/Calculate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/ChoosingOption.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/CountDay.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/DisplayTriangle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/FirstDialog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/HelloNameDialog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/HelloWorld.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/InputFromKeyboard.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/ShowTwoNumber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/SolveEquation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_01/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/20215268-Phuong_Tuan_Dat-BC_TH_Lab2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/20215268-Phuong_Tuan_Dat-BC_TH_Lab2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/ReadingAssigment/Setter_and_Getter_method.asta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/ReadingAssigment/Setter_and_Getter_method.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/answer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/answer_lab03.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/Aims.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/cart/Cart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/media/Book.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/media/CompactDisc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/media/DigitalVideoDisc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/media/Disc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/media/Media.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/media/Playable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/media/Track.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/aims/store/Store.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/test/cart/CartTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/test/disc/TestPasssingParameter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_02/hust/soict/test/store/StoreTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/Lab_03/20215268-Phuong_Tuan_Dat-BC_TH_Lab3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/hust/soict/garbage/ConcatenationInLoops.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/hust/soict/garbage/GarbageCreator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../production/src/hust/soict/garbage/NoGarbage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/media/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/media/CompactDisc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/media/DigitalVideoDisc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/media/Disc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/media/Media.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/media/Playable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/media/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_02/hust/soict/aims/Aims.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/Aims.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_02/hust/soict/aims/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_02/hust/soict/aims/disc/DigitalVideoDisc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_02/hust/soict/aims/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_02/hust/soict/aims/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_02/hust/soict/test/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_02/hust/soict/test/cart/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_02/hust/soict/test/disc/TestPasssingParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_02/hust/soict/test/disc/TestPasssingParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_02/hust/soict/test/store/StoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_02/hust/soict/test/store/StoreTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +34,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
